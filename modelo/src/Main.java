@@ -1,4 +1,5 @@
 
+import java.time.LocalDate;
 import java.util.Date;
 
 
@@ -17,8 +18,8 @@ public class Main {
 
         tiempo.mostrarFechaFormatoDDMMYY(fecha);
 
-
-//        TiempoRecord tiempoR = new TiempoRecord(fechaA);
-//        System.out.println(tiempoR.getFecha());
+        LocalDate.now();
+        TiempoRecord tiempoR = new TiempoRecord(LocalDate.now());
+        System.out.println(tiempoR.fecha());
     }
 }
